@@ -142,7 +142,7 @@ class ViewDelegate: NSObject, ObservableObject {
     }
     
     func createSession() {
-        client.createSession("eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJNYXggTlBFIEFwcCIsImlhdCI6MTcxODc4Mzc2MywibmJmIjoxNzE4NzgzNzYzLCJleHAiOjE3MjM5Njc3OTMsImp0aSI6IjE3MTg3ODM3OTMyNDYiLCJhcHBsaWNhdGlvbl9pZCI6IjRmZWQzZDdhLTNmNjUtNDM2ZC04N2RkLTc3NTEzOTRhYTQzMyIsImFjbCI6eyJwYXRocyI6eyIvKi91c2Vycy8qKiI6e30sIi8qL2NvbnZlcnNhdGlvbnMvKioiOnt9LCIvKi9zZXNzaW9ucy8qKiI6e30sIi8qL2RldmljZXMvKioiOnt9LCIvKi9pbWFnZS8qKiI6e30sIi8qL21lZGlhLyoqIjp7fSwiLyovYXBwbGljYXRpb25zLyoqIjp7fSwiLyovcHVzaC8qKiI6e30sIi8qL2tub2NraW5nLyoqIjp7fSwiLyovY2FsbHMvKioiOnt9LCIvKi9sZWdzLyoqIjp7fX19LCJzdWIiOiJhbGFtIn0.WdK3iMMYHQB2hbQWaKSIVdJxcqEW0HBpg7uJoX7CbVS1M9yR92YkUIDbWFaJLwZGQovd8a7-39Sb2eoy2i6a7R7Md6z9MU0UMc-8wiqizhk1mYNo75qtxJFgJHJnQqiAZ7jJswgEM1bvG1lKBdPlZ3VBqqmcMRHUp2OHpZSgJ5byHvghM7i8CenuYZlJrUFD0QEeYZ7OPxm5gmyjD8BqAVY_L-vuk5HAj6_AkGTzYTOUUK2WdQynYZVGh0sXgHVNqXkQB8OVH7itmo_LrvALfuWp8kBvuQ9ET0XwKJDFYL5XzCqrx_89QOxq3AZ9oOHly9trb1YRpItWo-uiaWoR0w", callback: { error,sid  in
+        client.createSession("Token", callback: { error,sid  in
             print(error?.localizedDescription ?? "session created: \(sid ?? "no id")")
         })
     }

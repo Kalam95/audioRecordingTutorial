@@ -15,7 +15,7 @@ pod install
 - Open the Workspace: After the dependencies are installed, open the Xcode workspace file (.xcworkspace).
 
 # Usage
-- App Setup: Replace the token in the ViewDelegate file at line 143 with a valid user token.
+- App Setup: Replace the token in the **ViewDelegate** file at line 145 with a valid user token.
 
 - Create Session: Once you have updated the token, press `Create session` to create a session with Vonage APIs.
 
